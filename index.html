@@ -1,11 +1,70 @@
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>HsuTing website</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.grey-deep_purple.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <script src="https://code.getmdl.io/1.1.1/material.min.js" defer></script>
   </head>
 
-  <body>
-    <canvas></canvas>
+  <!-- modify material design lite  --!>
+  <style>
+    .mdl-grid,
+    .mdl-cell {
+      height: calc(100% - 16px);
+    }
+  </style>
+
+  <!-- add css --!>
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+    .home-name__phone-padding {
+      padding: 40px 100px 40px 100px;
+    }
+    @media screen and (max-width: 479px) {
+      .home-name__phone-padding {
+        padding: 40px 20px 40px 20px;
+      }
+    }
+    @keyframes home-page__show-animation {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .home-page__show {
+      animation: home-page__show-animation 1s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+  </style>
+
+  <body class="mdl-layout mdl-js-layout">
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div class="mdl-grid home-page__show" style="background: url('./img/bg.jpg') center / cover;">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="mdl-cell mdl-cell--8-col center" style="flex-direction: row;">
+            <div class="center" style="flex-direction: column;">
+              <h2 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--white home-name__phone-padding"
+                  style="border: white solid 7px;
+                         border-radius: 3px;
+                         background-color: rgba(255, 255, 255, 0.1);"
+              >HSUTING</h2>
+              <h5 class="mdl-typography--text-center mdl-typography--title-color-contrast mdl-color-text--grey-200"
+                  style="position: relative; top: -25px;"
+              >A Website Engineer<h5>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        </div>
+      </div>
+    </main>
   </body>
 
-  <script src="./dist/common.min.js"></script>
-  <script src="./dist/index.min.js"></script>
+  <script src="./dist/common.min.js" defer></script>
+  <script src="./dist/index.min.js" defer></script>
 </html>

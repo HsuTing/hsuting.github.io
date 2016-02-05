@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
-    <title>HsuTing website</title>
+    <title>HsuTing</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.grey-deep_purple.min.css" />
@@ -44,6 +44,7 @@
 
   <body class="mdl-layout mdl-js-layout">
     <main class="mdl-layout__content">
+      <!-- home page --!>
       <div class="page-content">
         <div class="mdl-grid home-page__show" style="background: url('./img/bg.jpg') center / cover;">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -52,7 +53,8 @@
               <h2 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--white home-name__phone-padding"
                   style="border: white solid 7px;
                          border-radius: 3px;
-                         background-color: rgba(255, 255, 255, 0.1);"
+                         background-color: rgba(255, 255, 255, 0.1);
+                         letter-spacing: 0em;"
               >HSUTING</h2>
               <h5 class="mdl-typography--text-center mdl-typography--title-color-contrast mdl-color-text--grey-200"
                   style="position: relative; top: -25px;"
@@ -62,9 +64,22 @@
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
         </div>
       </div>
+
+      <!-- info --!>
     </main>
   </body>
 
   <script src="./dist/common.min.js" defer></script>
   <script src="./dist/index.min.js" defer></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54088195-4', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </html>

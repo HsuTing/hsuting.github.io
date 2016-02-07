@@ -11,14 +11,6 @@
     <script src="https://code.getmdl.io/1.1.1/material.min.js" defer></script>
   </head>
 
-  <!-- modify material design lite  --!>
-  <style>
-    .mdl-grid,
-    .mdl-cell {
-      height: calc(100% - 16px);
-    }
-  </style>
-
   <!-- add css --!>
   <style>
     .center {
@@ -33,22 +25,37 @@
         padding: 40px 20px 40px 20px;
       }
     }
-    @keyframes home-page__show-animation {
+
+    .body__hide {
+      opacity: 0;
+    }
+    @keyframes body__show-animation {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-    .home-page__show {
-      animation: home-page__show-animation 1s cubic-bezier(0.7, 0, 0.3, 1);
+    .body__show {
+      opacity: 1;
+      animation: body__show-animation 1s cubic-bezier(0.7, 0, 0.3, 1);
     }
   </style>
 
-  <body class="mdl-layout mdl-js-layout">
+  <body class="mdl-layout mdl-js-layout body__hide">
     <main class="mdl-layout__content">
       <!-- home page --!>
-      <div class="page-content">
-        <div class="mdl-grid home-page__show" style="background: url('./img/bg.jpg') center / cover;">
+      <div id="home-page"
+           class="page-content"
+           style="height: 100vh;
+                  overflow: hidden;"
+      >
+        <div class="mdl-grid"
+             style="background: url('./img/home-bg.jpg') center / cover;
+                    height: calc(100% - 16px);"
+        >
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="mdl-cell mdl-cell--8-col center" style="flex-direction: row;">
+          <div class="mdl-cell mdl-cell--8-col center"
+               style="flex-direction: row;
+                      height: calc(100% - 16px);"
+          >
             <div class="center" style="flex-direction: column;">
               <h2 class="mdl-typography--text-center mdl-typography--display-3 mdl-color-text--white home-name__phone-padding"
                   style="border: white solid 7px;
@@ -63,9 +70,46 @@
           </div>
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
         </div>
+        <div class="center"
+             style="flex-direction: row;
+                    position: relative;
+                    top: -70px;"
+        >
+          <div id="drop_down" class="material-icons mdl-color-text--white" style="font-size: 40px;">arrow_drop_down</div>
+          <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="drop_down">Scroll down.<br/>Learn more about me.</div>
+        </div>
       </div>
 
-      <!-- info --!>
+      <!-- about me --!>
+      <div id="about-me-page" class="page-content mdl-color--grey-200" style="padding: 30px 0px 30px 0px;">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone center" style="flex-direction: row;">
+            <div style="width: 250px;
+                        height: 250px;
+                        border-radius: 125px;
+                        background: url('./img/hsuting.jpg') center / cover;"
+            ></div>
+          </div>
+          <div class="mdl-cell mdl-cell--hide-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+          <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            <h6 class="mdl-typography--title">About Me</h6>
+            <p class="mdl-typography--body-1">
+              Hi, I am Hsu Ting. I am a website engineer.
+            </p>
+            <p class="mdl-typography--body-1">
+              I am not only familiar with the frontend design, but also familiar with using the web framework django to do web services. Coding is not jsut a work for me. Why I write a website is jsut I think it is interesting. On the other hand, I like to learn about new technology, and try to do smoething different.
+            </p>
+            <p class="mdl-typography--body-1">
+              The most important thing to me is 'Not stop thinking'.
+            </p>
+          </div>
+          <div class="mdl-cell mdl-cell--hide-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+        </div>
+      </div>
+
+      <!-- skill --!>
+      <div id="skill-page" class="page-content" style="margin-top: 30px;">
+      </div>
     </main>
   </body>
 
@@ -80,6 +124,5 @@
 
     ga('create', 'UA-54088195-4', 'auto');
     ga('send', 'pageview');
-
   </script>
 </html>

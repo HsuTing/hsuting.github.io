@@ -1,10 +1,11 @@
 'use strict';
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import SkillData from './skill_component/skill_data';
+import Skill from './skill';
+
 (() => {
-  let initInterval = setInterval(() => {
-    if(document.querySelector('.mdl-layout__container') != null) {
-      clearInterval(initInterval);
-      document.querySelector('body').className += ' body__show';
-    }
-  }, 10);
+  ReactDOM.render(<Skill data={SkillData} />, document.getElementById('skill'));
 })();

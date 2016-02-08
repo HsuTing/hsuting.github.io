@@ -39,6 +39,16 @@
     }
   </style>
 
+  <!-- add class after mal is onload --!>
+  <script>
+    var initInterval = setInterval(function() {
+      if(document.querySelector('.mdl-layout__container') != null) {
+        clearInterval(initInterval);
+        document.querySelector('body').className += ' body__show';
+      }   
+    }, 10);
+  </script>
+
   <body class="mdl-layout mdl-js-layout body__hide">
     <main class="mdl-layout__content">
       <!-- home page --!>
@@ -91,8 +101,8 @@
             ></div>
           </div>
           <div class="mdl-cell mdl-cell--hide-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
-          <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-            <h6 class="mdl-typography--title">About Me</h6>
+          <div class="mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            <h6 class="mdl-typography--title">ABOUT ME</h6>
             <p class="mdl-typography--body-1">
               Hi, I am Hsu Ting. I am a website engineer.
             </p>
@@ -103,12 +113,23 @@
               The most important thing to me is 'Not stop thinking'.
             </p>
           </div>
-          <div class="mdl-cell mdl-cell--hide-desktop mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+          <div class="mdl-cell mdl-cell--1-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
         </div>
       </div>
 
       <!-- skill --!>
-      <div id="skill-page" class="page-content" style="margin-top: 30px;">
+      <div id="skill-page" class="page-content mdl-color--grey-50">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            <h6 class="mdl-typography--title mdl-typography--text-center">SKILL</h6>
+          </div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"></div>
+          <div id="skill" class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--2-col-phon"></div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"></div>
+        </div>
       </div>
     </main>
   </body>

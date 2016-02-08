@@ -1,0 +1,19 @@
+@keyframes animation-skill__show-value {
+  from { top: 0px; }
+  to { top: -45px; }
+}
+
+.skill__show-value {
+  top: -45px;
+  animation: animation-skill__show-value 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@keyframes animation-skill__show-label {
+  from { top: -45px; }
+  to { top: 0px; }
+}
+
+.skill__show-label {
+  top: 0px;
+  animation: animation-skill__show-label 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}

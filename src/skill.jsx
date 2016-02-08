@@ -37,12 +37,14 @@ export default class Skill extends React.Component {
                              overflowY: "hidden",
                              top: "-90px"}}
                      className="skill__show-label"
-                     onMouseMove={this._mouseMove.bind(this, i)}
-                     onMouseLeave={this._mouseLeave.bind(this, i)}
                 >
                   <div id={"skill-" + i} style={{position: "relative"}}>
-                    <p className="mdl-typography--body-1 mdl-typography--text-center">{d.label}</p>
-                    <p className="mdl-typography--display-1 mdl-typography--text-center">{d.value}</p>
+                    <p className="mdl-typography--body-1 mdl-typography--text-center"
+                       onMouseEnter={this._mouseEnter.bind(this, i)}
+                    >{d.label}</p>
+                    <p className="mdl-typography--display-1 mdl-typography--text-center"
+                       onMouseLeave={this._mouseLeave.bind(this, i)}
+                    >{d.value}</p>
                   </div>
                 </div>
               </div>
@@ -53,7 +55,7 @@ export default class Skill extends React.Component {
     );
   }
 
-  _mouseMove(index, event) {
+  _mouseEnter(index, event) {
     let item = document.querySelector('#skill-' + index);
     if(item != null && (item.className == "skill__show-label" || item.className == "")) {
       item.className = "skill__show-value";

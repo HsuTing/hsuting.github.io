@@ -38,12 +38,14 @@ export default class Skill extends React.Component {
                              top: "-90px"}}
                      className="skill__show-label"
                 >
-                  <div id={"skill-" + i} style={{position: "relative"}}>
+                  <div id={"skill-" + i} style={{position: "relative", cursor: "pointer"}}>
                     <p className="mdl-typography--body-1 mdl-typography--text-center"
-                       onMouseEnter={this._mouseEnter.bind(this, i)}
+                       onClick={this._showLabel.bind(this, i)}
+                       onMouseEnter={this._showLabel.bind(this, i)}
                     >{d.label}</p>
                     <p className="mdl-typography--display-1 mdl-typography--text-center"
-                       onMouseLeave={this._mouseLeave.bind(this, i)}
+                       onClick={this._showValue.bind(this, i)}
+                       onMouseLeave={this._showValue.bind(this, i)}
                     >{d.value}</p>
                   </div>
                 </div>
@@ -55,14 +57,14 @@ export default class Skill extends React.Component {
     );
   }
 
-  _mouseEnter(index, event) {
+  _showLabel(index, event) {
     let item = document.querySelector('#skill-' + index);
     if(item != null && (item.className == "skill__show-label" || item.className == "")) {
       item.className = "skill__show-value";
     }
   }
 
-  _mouseLeave(index, event) {
+  _showValue(index, event) {
     let item = document.querySelector('#skill-' + index);
     if(item != null && (item.className == "skill__show-value" || item.className == "")) {
       item.className = "skill__show-label";

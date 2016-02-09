@@ -1,0 +1,9 @@
+.work-text {
+  height: 70px;
+}
+
+@media screen and (max-width: 479px) {
+  .work-text {
+    height: inherit;
+  }
+}

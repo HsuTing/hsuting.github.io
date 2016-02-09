@@ -1,0 +1,17 @@
+.about-me-icons {
+  font-size: 60px;
+  float: left;
+  width: 40%;
+}
+
+.about-me-text {
+  float: left;
+  width: 60%;
+}
+
+@media screen and (max-width: 400px) {
+  .about-me-icons,
+  .about-me-text {
+    float: none;
+  }
+}

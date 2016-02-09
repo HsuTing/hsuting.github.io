@@ -1,6 +1,7 @@
 @keyframes animation-skill__show-value {
-  from { top: 0px; }
-  to { top: -45px; }
+  0% { top: 0px; opacity: 1; }
+  50% { opacity: 0; }
+  100% { top: -45px; opacity: 1; }
 }
 
 .skill__show-value {
@@ -9,8 +10,9 @@
 }
 
 @keyframes animation-skill__show-label {
-  from { top: -45px; }
-  to { top: 0px; }
+  0% { top: -45px; opacity: 1; }
+  50% { opacity: 0; }
+  100% { top: 0px; opacity: 1; }
 }
 
 .skill__show-label {

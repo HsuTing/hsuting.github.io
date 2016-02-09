@@ -15,10 +15,15 @@
 
   <!-- add css --!>
   <style>
+    .page-content {
+      padding: 50px 0px 50px 0px;
+    }
+
     .center {
       display: flex;
       justify-content: center;
     }
+
     .home-name__phone-padding {
       padding: 40px 100px 40px 100px;
     }
@@ -57,7 +62,8 @@
       <div id="home-page"
            class="page-content"
            style="height: 100vh;
-                  overflow: hidden;"
+                  overflow: hidden;
+                  padding: 0px;"
       >
         <div class="mdl-grid"
              style="background: url('./img/home-bg.jpg') center / cover;
@@ -93,7 +99,7 @@
       </div>
 
       <!-- about me --!>
-      <div id="about-me-page" class="page-content mdl-color--grey-200" style="padding: 30px 0px 30px 0px;">
+      <div id="about-me-page" class="page-content mdl-color--grey-200">
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone center" style="flex-direction: row;">
             <div style="width: 250px;
@@ -116,6 +122,12 @@
             </p>
           </div>
           <div class="mdl-cell mdl-cell--1-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="margin-bottom: 50px;"></div>
+
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"></div>
+          <div id="about-me" class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--2-col-phone"></div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"></div>
         </div>
       </div>
 
@@ -142,12 +154,33 @@
         </div>
       </div>
 
+      <!-- work --!>
+      <div id="work-page" class="page-content mdl-color--grey-200">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+          <div class="mdl-cell mdl-cell--8-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            <h6 class="mdl-typography--text-center mdl-typography--title">WORK</h6>
+            <p class="mdl-typography--text-center mdl-typography--body-1 mdl-color-text--grey-400">
+              Here are some projects I make. You can learn more about me from those projects.<br/>
+              However, I still learn more technology. So, I will not stop to improve my ability and projects.
+            </p>
+          </div>
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
+
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone"></div>
+
+          <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"></div>
+          <div id="work" class="mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--2-col-phone"></div>
+          <div class="mdl-cell mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"></div>
+        </div>
+      </div>
+
       <!-- contact me--!>
       <div id="contact-me-page" class="page-content mdl-color--grey-800">
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
           <div class="mdl-cell mdl-cell--8-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-            <h6 class="mdl-typography--title mdl-typography--text-center mdl-color-text--white">CONTACT ME</h6>
+            <h6 class="mdl-typography--text-center mdl-typography--title mdl-color-text--white">CONTACT ME</h6>
           </div>
           <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
 

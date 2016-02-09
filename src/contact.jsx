@@ -11,7 +11,7 @@ export default class Contact extends React.Component {
             <a key={i} href={d.url}>
               <i className={d.className}
                  style={{color: "white",
-                         margin: "0px 5px 0px 5px"}}
+                         margin: "0px 10px 0px 10px"}}
               ></i>
             </a>
           );

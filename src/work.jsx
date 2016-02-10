@@ -15,9 +15,20 @@ export default class Work extends React.Component {
               <div className="mdl-card mdl-shadow--6dp"
                    style={{background: "url('" + d.img + "') center / cover",
                            width: "100%",
-                           height: "160px",
+                           height: "200px",
                            marginBottom: "20px"}}
-              ></div>
+              >
+                <div className="work-img-text">
+                  <div style={{height: "calc(100% - 52px)"}}></div>
+                  <div style={{height: "52px",
+                               padding: "16px",
+                               background: "white",
+                               color: "black",
+                               fontSize: "14px",
+                               fontWeight: "500"}}
+                  >{d.label}</div>
+                </div>
+              </div>
               <p className="mdl-typography--body-1 work-text"
                  dangerouslySetInnerHTML={{__html: d.text}}
               ></p>

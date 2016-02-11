@@ -1,0 +1,50 @@
+.recent-developments {
+  width: 100%;
+}
+
+.recent-developments .text {
+  width: 200px;
+  height: 150px;
+  padding: 0px 20px 20px 20px;
+  border: #E0E0E0 solid 2px;
+}
+
+.recent-developments .item {
+  width: calc(50% - 2px);
+  border-right: #EEEEEE solid 2px;
+  float: left;
+}
+
+@media (min-width: 590px) {
+  .recent-developments-show {
+    display: block;
+  }
+
+  .recent-developments-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 589px) {
+  .recent-developments {
+    width: initial;
+  }
+
+  .recent-developments .item {
+    width: calc(35% - 2px);
+  }
+
+  .recent-developments-small-show {
+    display: block;
+  }
+
+  .recent-developments-small-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .recent-developments .text {
+    width: 100%;
+  }
+}

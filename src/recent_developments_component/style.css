@@ -45,6 +45,7 @@
 
 @media (max-width: 450px) {
   .recent-developments .text {
-    width: 100%;
+    width: 80%;
+    height: 200px;
   }
 }

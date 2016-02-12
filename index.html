@@ -14,6 +14,8 @@
   <!-- add css --!>
   <style>
     .page-content {
+      position: relative;
+      left: 100%;
       padding: 50px 0px 50px 0px;
     }
 
@@ -55,18 +57,18 @@
   </script>
 
   <body class="mdl-layout mdl-js-layout body__hide">
-    <main class="mdl-layout__content">
+    <main class="mdl-layout__content"
+          style="background: url('./img/home-bg.jpg') center / cover;"
+    >
       <!-- home page --!>
       <div id="home-page"
            class="page-content"
            style="height: 100vh;
                   overflow: hidden;
-                  padding: 0px;"
+                  padding: 0px;
+                  left: 0px;"
       >
-        <div class="mdl-grid"
-             style="background: url('./img/home-bg.jpg') center / cover;
-                    height: calc(100% - 16px);"
-        >
+        <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="mdl-cell mdl-cell--8-col center"
                style="flex-direction: row;
@@ -91,7 +93,7 @@
                     position: relative;
                     top: -70px;"
         >
-          <div id="drop_down" class="material-icons mdl-color-text--white" style="font-size: 40px;">arrow_drop_down</div>
+          <div id="drop_down" class="material-icons mdl-color-text--white">arrow_downward</div>
           <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="drop_down">Scroll down.<br/>Learn more about me.</div>
         </div>
       </div>
@@ -189,12 +191,14 @@
         </div>
       </div>
 
-      <!-- contact me--!>
-      <div id="contact-me-page" class="page-content mdl-color--grey-800">
+      <!-- contact --!>
+      <div id="contact-page" class="page-content mdl-color--grey-800"
+           style="left: 0px;"
+      >
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
           <div class="mdl-cell mdl-cell--8-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-            <h6 class="mdl-typography--text-center mdl-typography--title mdl-color-text--white">CONTACT ME</h6>
+            <h6 class="mdl-typography--text-center mdl-typography--title mdl-color-text--white">CONTACT</h6>
           </div>
           <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-tablet mdl-cell--1-col-phone"></div>
 

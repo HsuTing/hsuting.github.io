@@ -50,5 +50,9 @@ let page_animation = (now_bottom, page_id, animation_length) => {
     page_animation(now_bottom, "skill", animation_length);
     page_animation(now_bottom, "work", animation_length);
     page_animation(now_bottom, "recent-developments", animation_length);
+
+    if(now_position == 0) {
+      document.querySelector('#about-me-page').style.left = "100%";
+    }
   });
 })();

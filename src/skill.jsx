@@ -23,7 +23,7 @@ export default class Skill extends React.Component {
                  className="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone center"
             >
               <div style={{height: "160px",
-                           overflowY: "hidden"}}
+                           overflow: "hidden"}}
               >
                 <svg width="160px" height="160px">
                   <circle cx={cx} cy={cy} r={r - 1} fill="darkturquoise" />

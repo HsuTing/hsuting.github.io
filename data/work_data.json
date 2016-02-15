@@ -1,5 +1,11 @@
 [
   {
+    "label": "blog",
+    "img": "./img/blog.jpg",
+    "url": "http://hsuting.github.io/blog",
+    "text": "This is my blog, and it uses <strong>github</strong>."
+  },
+  {
     "label": "mdl-form",
     "img": "./img/mdl-form.jpg",
     "url": "https://github.com/HsuTing/mdl-form",

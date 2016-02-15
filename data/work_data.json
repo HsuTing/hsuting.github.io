@@ -3,7 +3,7 @@
     "label": "blog",
     "img": "./img/blog.jpg",
     "url": "http://hsuting.github.io/blog",
-    "text": "This is my blog, and it uses <strong>github</strong>."
+    "text": "This is my blog, and I use <strong>github</strong> to set up this blog."
   },
   {
     "label": "mdl-form",

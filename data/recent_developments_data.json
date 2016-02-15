@@ -1,9 +1,9 @@
 [
   {
     "date": "FEB 2016",
-    "title": "Personal Website",
-    "subtitle": "FEB 12",
-    "text": "This is test"
+    "title": "Blog",
+    "subtitle": "FEB 16",
+    "text": "My blog is online, you can see <a href='http://hsuting.github.io/blog/' style='text-decoration: none; color: inherit; font-weight: bold;'>here</a>."
   },
   {
     "date": "FEB 2016",

@@ -12,23 +12,21 @@ export default class Work extends React.Component {
             <div key={i}
                  className="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"
             >
-              <div className="mdl-card mdl-shadow--6dp"
+              <div className="mdl-card mdl-shadow--8dp"
                    style={{background: "url('" + d.img + "') center / cover",
                            width: "100%",
                            height: "200px",
                            marginBottom: "20px"}}
               >
                 <div className="work-img-text">
-                  <div style={{height: "calc(100% - 52px)"}}></div>
-                  <div style={{height: "52px",
-                               padding: "16px",
-                               background: "white",
-                               color: "black",
-                               fontSize: "14px",
-                               fontWeight: "500"}}
-                  >{d.label}</div>
+                  <p className="mdl-typography--display-1 mdl-color-text--white mdl-typography--text-uppercase"
+                     style={{position: "absolute",
+                             bottom: "0px"}}
+                     dangerouslySetInnerHTML={{__html: d.label}}
+                  ></p>
                 </div>
               </div>
+
               <p className="mdl-typography--body-1 work-text"
                  dangerouslySetInnerHTML={{__html: d.text}}
               ></p>

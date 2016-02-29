@@ -18,7 +18,7 @@ export default class Text extends React.Component {
                      backgroundColor: "#212121"}}
         >{data.date}</div>
         <div className={text}>
-          <h6 className="mdl-typography--title" style={{marginBottom: "0px"}}>{data.title}</h6>
+          <h6 className="mdl-typography--title mdl-typography--font-bold" style={{marginBottom: "0px"}}>{data.title}</h6>
           <p className="mdl-typography--body-1 mdl-color-text--grey-400">{data.subtitle}</p>
           <p className="mdl-typography--body-1" dangerouslySetInnerHTML={{__html: data.text}}></p>
         </div>

@@ -19,7 +19,7 @@ export default class Work extends React.Component {
                            marginBottom: "20px"}}
               >
                 <div className="work-img-text">
-                  <p className="mdl-typography--display-1 mdl-color-text--white mdl-typography--text-uppercase"
+                  <p className="mdl-typography--display-1 mdl-color-text--white mdl-typography--text-uppercase mdl-typography--font-bold"
                      style={{position: "absolute",
                              bottom: "0px"}}
                      dangerouslySetInnerHTML={{__html: d.label}}

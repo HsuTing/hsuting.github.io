@@ -1,14 +1,38 @@
 [
   {
-    "date": "FEB 2016",
-    "title": "Blog",
-    "subtitle": "FEB 16",
-    "text": "My blog is online, you can see <a href='http://hsuting.github.io/blog/'>here</a>."
+    "date": "JUL 2015",
+    "title": "CUL",
+    "subtitle": "JUL 10",
+    "text": "I am one leader of photography team at <a href='https://www.facebook.com/CULatNCKU/?fref=ts'>CUL</a>. I join in this camp thrice."
   },
   {
-    "date": "FEB 2016",
-    "title": "Personal Website",
-    "subtitle": "FEB 12",
-    "text": "After a week, my personal website is finally ok."
+    "date": "FEB 2015",
+    "title": "CMNST",
+    "subtitle": "FEB 01",
+    "text": "I am an engineer at CMNST and maintain the <a href='http://cmnst2013.cmnst.ncku.edu.tw/cmnst_e_system/'>website</a>."
+  },
+  {
+    "date": "SEP 2014",
+    "title": "Freshman camp",
+    "subtitle": "SEP 12",
+    "text": "I am a management of this camp`s website. I join in this camp twice."
+  },
+  {
+    "date": "OCT 2013",
+    "title": "Student union",
+    "subtitle": "OCT 4",
+    "text": "I am a member of finance department at <a href='https://www.facebook.com/NCKUSU/?fref=ts'>SU</a>. I join in it twice."
+  },
+  {
+    "date": "MAY 2013",
+    "title": "DOT Studio",
+    "subtitle": "MAY 01",
+    "text": "I join in <a href='https://www.facebook.com/dotstudio2013/?fref=ts'>DOT Studio</a> and work as editor."
+  },
+  {
+    "date": "SEP 2010",
+    "title": "Study at NCKU",
+    "subtitle": "SEP 01",
+    "text": "I major in <a href='http://www.csie.ncku.edu.tw/ncku_csie/'>CSIE</a> at <a href='http://web.ncku.edu.tw/bin/home.php?Lang=en'>NCKU</a>."
   }
 ]

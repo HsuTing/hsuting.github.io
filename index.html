@@ -112,8 +112,36 @@
     }, 10);
   </script>
 
-  <body class="mdl-layout mdl-js-layout body__hide">
-    <main class="mdl-layout__content">
+  <body class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button body__hide">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="http://hsuting.github.io/blog/">Blog</a>
+            <a class="mdl-navigation__link" href="./#about-me-page">About</a>
+            <a class="mdl-navigation__link" href="./#skill-page">Skill</a>
+            <a class="mdl-navigation__link" href="./#work-page">Work</a>
+            <a class="mdl-navigation__link" href="./#recent-developments-page">Recent</a>
+            <a class="mdl-navigation__link" href="./#contact-page">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="http://hsuting.github.io/blog/">Blog</a>
+        <a class="mdl-navigation__link" href="./#about-me-page">About</a>
+        <a class="mdl-navigation__link" href="./#skill-page">Skill</a>
+        <a class="mdl-navigation__link" href="./#work-page">Work</a>
+        <a class="mdl-navigation__link" href="./#recent-developments-page">Recent</a>
+        <a class="mdl-navigation__link" href="./#contact-page">Contact</a>
+      </nav>
+    </div>
+
+    <main class="mdl-layout__content"
+          style="position: absolute;
+                 top: 0px;"
+    >
       <!-- home page --!>
       <div id="home-page"
            class="page-content"

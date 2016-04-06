@@ -35,4 +35,27 @@ import Contact from './contact';
   });
 
   ReactDOM.render(<Contact data={ContactData} />, document.getElementById('contact'));
+
+  let fps = 60;
+  let time = 0.5;
+  let all_link = document.querySelectorAll('nav a');
+  let click_function = (e) => {
+    let hash = e.target.href.split("#")[1];
+    let now_position = 0;
+    let end_position = document.querySelector('#' + hash).offsetTop;
+    let move = (end_position - now_position) / (time * fps);
+    let interval = setInterval(() => {
+      now_position += move;
+      if(now_position > end_position) {
+        clearInterval(interval);
+        document.querySelector('body').scrollTop = end_position;
+      }
+      else {
+        document.querySelector('body').scrollTop = now_position;
+      }
+    }, (1000 / fps));
+  };
+  Array.prototype.map.call(all_link, (d) => {
+    d.onclick = click_function;
+  });
 })();

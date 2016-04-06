@@ -11,6 +11,7 @@ export default class Work extends React.Component {
           return (
             <div key={i}
                  className="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"
+                 style={{paddingBottom: "20px"}}
             >
               <div className="mdl-card mdl-shadow--8dp"
                    style={{background: "url('" + d.img + "') center / cover",

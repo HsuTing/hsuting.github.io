@@ -12,6 +12,24 @@
     "text": "This is my blog, and I use <strong>github</strong> to set up this blog."
   },
   {
+    "label": "mudslide",
+    "img": "./img/work/mudslide.png",
+    "url": "http://long.taiwanstat.com/mudslide/",
+    "text": "One of my data visualization works at <a href='http://real.taiwanstat.com'>taiwanstat</a>. This is about mudslide."
+  },
+  {
+    "label": "flood",
+    "img": "./img/work/flood.png",
+    "url": "http://real.taiwanstat.com/flood/",
+    "text": "One of my data visualization works at <a href='http://real.taiwanstat.com'>taiwanstat</a>. This is about flood."
+  },
+  {
+    "label": "environmental<br/>radiation",
+    "img": "./img/work/gamma.png",
+    "url": "http://real.taiwanstat.com/gamma/",
+    "text": "One of my data visualization works at <a href='http://real.taiwanstat.com'>taiwanstat</a>. This is about environmental radiation."
+  },
+  {
     "label": "mdl-form",
     "img": "./img/work/mdl-form.jpg",
     "url": "https://github.com/HsuTing/mdl-form",

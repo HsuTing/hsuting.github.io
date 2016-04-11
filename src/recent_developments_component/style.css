@@ -2,50 +2,36 @@
   width: 100%;
 }
 
-.recent-developments .text {
-  width: 200px;
-  height: 150px;
-  padding: 0px 20px 20px 20px;
-  border: #E0E0E0 solid 2px;
+.recent-developments > div > div:nth-child(1),
+.recent-developments > div > div:nth-child(3) {
+  width: calc(50% - 5px);
 }
 
-.recent-developments .item {
-  width: calc(50% - 2px);
-  border-right: #EEEEEE solid 2px;
+.recent-developments > div:nth-child(odd) > div {
   float: left;
 }
 
-@media (min-width: 590px) {
-  .recent-developments-show {
-    display: block;
-  }
-
-  .recent-developments-hide {
-    display: none;
-  }
+.recent-developments > div:nth-child(odd) > div:nth-child(1) > div {
+  float: right;
 }
 
-@media (max-width: 589px) {
-  .recent-developments {
-    width: initial;
-  }
-
-  .recent-developments .item {
-    width: calc(35% - 2px);
-  }
-
-  .recent-developments-small-show {
-    display: block;
-  }
-
-  .recent-developments-small-hide {
-    display: none;
-  }
+.recent-developments > div:nth-child(even) > div,
+.recent-developments > div:nth-child(even) > div:nth-child(3) > div {
+  float: right;
 }
 
-@media (max-width: 450px) {
-  .recent-developments .text {
-    width: 80%;
-    height: 200px;
+.recent-developments > div:nth-child(even) > div:nth-child(1) > div {
+  float: left;
+}
+
+@media screen and (max-width: 479px) {
+  .recent-developments > div > div:nth-child(2) {
+    display: none;
+  }
+
+  .recent-developments > div > div:nth-child(1),
+  .recent-developments > div > div:nth-child(3) {
+    width: 100%;
+    float: left;
   }
 }

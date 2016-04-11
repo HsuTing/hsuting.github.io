@@ -10,13 +10,13 @@ let data = [
   {
     'label': 'Work',
     'className': 'work',
-    'text': 'Engineer at CMNST, in NCKU',
+    'text': 'Engineer at Center for Micro/Nano Science and Technology at NCKU',
     'date': '2015'
   },
   {
-    'label': 'Favorite',
+    'label': 'Hobbies',
     'className': 'favorite',
-    'text': 'Coding, Gaming and Traveling sometimes'
+    'text': 'Coding, Gaming and Traveling'
   }
 ]
 

@@ -35,6 +35,11 @@ let data = [
     'label': 'Java',
     'width': '29.5625',
     'value': '40'
+  },
+  {
+    'label': 'Android',
+    'width': '40',
+    'value': '25'
   }
 ];
 

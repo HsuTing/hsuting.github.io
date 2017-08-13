@@ -1,0 +1,31 @@
+{
+  "generator-cat": {
+    "promptValues": {
+      "authorName": "HsuTing",
+      "authorEmail": "hsuting0106@gmail.com",
+      "authorUrl": "http://hsuting.com",
+      "website": true,
+      "chooseType": "docs",
+      "graphql": false,
+      "plugins": [],
+      "subject": "HsuTing",
+      "otherSettings": []
+    },
+    "plugins": [
+      "docs",
+      "react"
+    ],
+    "alias": {
+      "public": "public",
+      "components": "components",
+      "componentsShare": "components/share",
+      "utils": "utils"
+    },
+    "template": {
+      "subject": "HsuTing",
+      "url": "http://hsuting.com",
+      "otherSettings": []
+    },
+    "cat": true
+  }
+}

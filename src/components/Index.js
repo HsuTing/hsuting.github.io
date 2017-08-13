@@ -13,7 +13,7 @@ class Index extends React.Component {
       <div>
         <Normalize />
 
-        This is Index!
+        Rebuilding...
       </div>
     );
   }

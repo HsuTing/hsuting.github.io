@@ -1,4 +1,4 @@
-# Hsuting-github-io [![Build Status][travis-image]][travis-url]
+# Hsuting.github.io [![Build Status][travis-image]][travis-url]
 HsuTing personal website
 
 ## Getting Started

@@ -10,7 +10,7 @@
     "prod": "export NODE_ENV=production && yarn babel && static static.config.js && yarn webpack",
     "watch": "concurrently -c green \"yarn lint:watch\" \"yarn babel:watch\" \"yarn webpack-server\""
   },
-  "name": "hsuting-github-io",
+  "name": "hsuting.github.io",
   "version": "0.1.0",
   "description": "HsuTing personal website",
   "author": {
@@ -26,13 +26,13 @@
   "pre-commit": [
     "lint"
   ],
-  "homepage": "https://github.com/HsuTing/hsuting-github-io/",
+  "homepage": "https://github.com/HsuTing/hsuting.github.io/",
   "repository": {
     "type": "git",
-    "url": "get+https://github.com/HsuTing/hsuting-github-io.git"
+    "url": "get+https://github.com/HsuTing/hsuting.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/HsuTing/hsuting-github-io/issues/"
+    "url": "https://github.com/HsuTing/hsuting.github.io/issues/"
   },
   "license": "MIT",
   "devDependencies": {

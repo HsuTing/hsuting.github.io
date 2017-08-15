@@ -1,7 +1,6 @@
 [
   {
     "name": "front end",
-    "value": 85,
     "items": [
       {
         "name": "html",
@@ -12,16 +11,14 @@
         "value": 85
       },
       {
-        "name": "js",
-        "value": 80,
+        "name": "javascript",
         "items": [
           {
-            "name": "ECMAScript",
+            "name": "ECMAscript",
             "value": 85
           },
           {
             "name": "react",
-            "value": 85,
             "items": [
               {
                 "name": "radium",
@@ -36,12 +33,8 @@
                 "value": 60
               },
               {
-                "name": "react-icons",
-                "value": 95
-              },
-              {
                 "name": "react-relay",
-                "value:": 65
+                "value": 65
               }
             ]
           },
@@ -59,15 +52,19 @@
   },
   {
     "name": "back end",
-    "value": 80,
     "items": [
       {
-        "name": "npm",
-        "value": 80
-      },
-      {
-        "name": "yarn",
-        "value": 85
+        "name": "package manager",
+        "items": [
+          {
+            "name": "npm",
+            "value": 80
+          },
+          {
+            "name": "yarn",
+            "value": 85
+          }
+        ]
       },
       {
         "name": "yeoman",
@@ -78,16 +75,34 @@
         "value": 75
       },
       {
-        "name": "koa",
-        "value": 85
+        "name": "framework",
+        "items": [
+          {
+            "name": "koa",
+            "value": 85
+          },
+          {
+            "name": "express",
+            "value": 75
+          }
+        ]
       },
       {
-        "name": "mocha",
-        "value": 50
-      },
-      {
-        "name": "istanbul",
-        "value": 50
+        "name": "testing",
+        "items": [
+          {
+            "name": "mocha",
+            "value": 50
+          },
+          {
+            "name": "istanbul",
+            "value": 50
+          },
+          {
+            "name": "should.js",
+            "value": 40
+          }
+        ]
       },
       {
         "name": "eslint",
@@ -98,34 +113,43 @@
         "value": 70
       },
       {
-        "name": "postgresql",
-        "value": 70
-      },
-      {
-        "name": "sqlite",
-        "value": 80
-      },
-      {
-        "name": "firebase",
-        "value": 75
+        "name": "storage",
+        "items": [
+          {
+            "name": "postgresql",
+            "value": 70
+          },
+          {
+            "name": "sqlite",
+            "value": 80
+          },
+          {
+            "name": "mysql",
+            "value": 50
+          },
+          {
+            "name": "firebase",
+            "value": 75
+          }
+        ]
       }
     ]
   },
   {
     "name": "devOps",
-    "value": 70,
     "items": [
       {
-        "name": "linux",
-        "value": 75
-      },
-      {
-        "name": "aws",
-        "value": 80
-      },
-      {
-        "name": "heroku",
-        "value": 75
+        "name": "cloud",
+        "items": [
+          {
+            "name": "aws",
+            "value": 80
+          },
+          {
+            "name": "heroku",
+            "value": 75
+          }
+        ]
       },
       {
         "name": "travis",
@@ -140,12 +164,17 @@
         "value": 75
       },
       {
-        "name": "vim",
-        "value": 85
-      },
-      {
-        "name": "bash script",
-        "vlaue": 75
+        "name": "terminal",
+        "items": [
+          {
+            "name": "vim",
+            "value": 85
+          },
+          {
+            "name": "bash script",
+            "vlaue": 75
+          }
+        ]
       }
     ]
   }

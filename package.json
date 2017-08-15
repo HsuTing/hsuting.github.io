@@ -58,7 +58,8 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "cat-components": "^1.7.0",
+    "cat-components": "^1.7.1",
+    "moment": "^2.18.1",
     "nunjucks": "^3.0.1",
     "prop-types": "^15.5.10",
     "radium": "^0.19.4",

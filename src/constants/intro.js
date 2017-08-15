@@ -14,4 +14,11 @@ export default [{
   second: 4,
   millisecond: 500,
   content: 'Choose one you like.'
+}, {
+  second: 6,
+  type: 'types',
+  content: [].constructor.apply(this, new Array(9)).map(() => ({
+    link: '/',
+    img: 'http://hsuting.com/public/favicon/apple-icon-180x180.png'
+  }))
 }];

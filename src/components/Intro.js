@@ -13,13 +13,34 @@ import getLink from 'utils/getLink';
 
 import * as style from './style/intro';
 
-const subtitle = introText.map(({content, ...time}) => ({
+const subtitle = introText.map(({content, type, ...time}) => ({
   ...time,
   content: now => ( // eslint-disable-line react/display-name
     !now ?
       <div /> :
-      <StyleRoot style={style.text}
-      >{content}</StyleRoot>
+      (() => {
+        switch(type) {
+          case 'types':
+            return (
+              <div style={style.imgs}>
+                {content.map(({link, img}, index) => (
+                  <Img key={index}
+                    style={style.img}
+                    src={img}
+                    link={link}
+                    type='div'
+                  />
+                ))}
+              </div>
+            );
+
+          default:
+            return (
+              <StyleRoot style={style.text}
+              >{content}</StyleRoot>
+            );
+        }
+      })()
   )
 }));
 const endTime = introText.slice(-1)[0];
@@ -51,9 +72,10 @@ export default class Intro extends React.Component {
   render() {
     const {isRunning, timer, timerStart} = this.props;
 
+    // TODO: contentStyle
     return (
       <div>
-        <StyleRoot style={style.root}>
+        <StyleRoot style={style.root(isRunning)}>
           <div />
 
           {

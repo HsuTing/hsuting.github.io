@@ -4,10 +4,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import radium, {StyleRoot} from 'radium';
 import moment from 'moment';
+import Img from 'cat-components/lib/img';
 import VideoSubtitle from 'cat-components/lib/video-subtitle';
 import timer from 'cat-components/lib/timer';
 
 import introText from 'constants/intro';
+import getLink from 'utils/getLink';
 
 import * as style from './style/intro';
 
@@ -32,10 +34,9 @@ export default class Intro extends React.Component {
     timerStop: PropTypes.func.isRequired
   }
 
-  componentDidMount() {
-    const {timerStart} = this.props;
-
-    timerStart();
+  constructor(props) {
+    super(props);
+    this.start = true;
   }
 
   componentDidUpdate() {
@@ -48,22 +49,33 @@ export default class Intro extends React.Component {
   }
 
   render() {
-    const {isRunning, timer} = this.props;
+    const {isRunning, timer, timerStart} = this.props;
 
     return (
       <div>
         <StyleRoot style={style.root}>
           <div />
 
-          <VideoSubtitle now={isRunning ? timer : endTime}
-            subtitle={subtitle}
-          />
+          {
+            !isRunning && this.start ?
+              null :
+              <VideoSubtitle now={isRunning ? timer : endTime}
+                subtitle={subtitle}
+              />
+          }
 
           <div />
         </StyleRoot>
 
         <div style={style.mask} />
-        <div style={style.background} />
+        <Img style={style.background}
+          src={getLink('/public/img/intro/background.jpg')}
+          type='div'
+          onLoad={() => {
+            this.start = false;
+            timerStart();
+          }}
+        />
       </div>
     );
   }

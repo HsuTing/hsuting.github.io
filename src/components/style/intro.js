@@ -5,8 +5,6 @@ import white from 'cat-components/lib/color/white';
 import black from 'cat-components/lib/color/black';
 import * as layoutStyle from 'cat-components/lib/layout';
 
-import getLink from 'utils/getLink';
-
 export const root = {
   position: 'fixed',
   top: '0px',
@@ -51,7 +49,6 @@ export const background = {
   left: '-1px',
   width: 'calc(100vw + 1px * 2)',
   height: 'calc(100vh + 1px * 2)',
-  background: `url(${getLink('/public/img/intro/background.jpg')}) center / cover`,
   filter: 'grayscale(100%) blur(1px)',
   zIndex: '-1'
 };

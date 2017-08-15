@@ -1,0 +1,152 @@
+[
+  {
+    "name": "front end",
+    "value": 85,
+    "items": [
+      {
+        "name": "html",
+        "value": 95
+      },
+      {
+        "name": "css",
+        "value": 85
+      },
+      {
+        "name": "js",
+        "value": 80,
+        "items": [
+          {
+            "name": "ECMAScript",
+            "value": 85
+          },
+          {
+            "name": "react",
+            "value": 85,
+            "items": [
+              {
+                "name": "radium",
+                "value": 90
+              },
+              {
+                "name": "react-redux",
+                "value": 70
+              },
+              {
+                "name": "react-router-dom",
+                "value": 60
+              },
+              {
+                "name": "react-icons",
+                "value": 95
+              },
+              {
+                "name": "react-relay",
+                "value:": 65
+              }
+            ]
+          },
+          {
+            "name": "webpack",
+            "value": 85
+          },
+          {
+            "name": "babel",
+            "value": 85
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "back end",
+    "value": 80,
+    "items": [
+      {
+        "name": "npm",
+        "value": 80
+      },
+      {
+        "name": "yarn",
+        "value": 85
+      },
+      {
+        "name": "yeoman",
+        "value": 80
+      },
+      {
+        "name": "electron",
+        "value": 75
+      },
+      {
+        "name": "koa",
+        "value": 85
+      },
+      {
+        "name": "mocha",
+        "value": 50
+      },
+      {
+        "name": "istanbul",
+        "value": 50
+      },
+      {
+        "name": "eslint",
+        "value": 70
+      },
+      {
+        "name": "graphql",
+        "value": 70
+      },
+      {
+        "name": "postgresql",
+        "value": 70
+      },
+      {
+        "name": "sqlite",
+        "value": 80
+      },
+      {
+        "name": "firebase",
+        "value": 75
+      }
+    ]
+  },
+  {
+    "name": "devOps",
+    "value": 70,
+    "items": [
+      {
+        "name": "linux",
+        "value": 75
+      },
+      {
+        "name": "aws",
+        "value": 80
+      },
+      {
+        "name": "heroku",
+        "value": 75
+      },
+      {
+        "name": "travis",
+        "value": 80
+      },
+      {
+        "name": "docker",
+        "value": 65
+      },
+      {
+        "name": "apache",
+        "value": 75
+      },
+      {
+        "name": "vim",
+        "value": 85
+      },
+      {
+        "name": "bash script",
+        "vlaue": 75
+      }
+    ]
+  }
+]

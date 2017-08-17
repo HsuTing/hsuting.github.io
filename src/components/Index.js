@@ -40,9 +40,14 @@ class Index extends React.Component {
 }
 
 /* eslint-disable react/display-name, react/prop-types */
-export default ({radiumConfig, ...props}) => (
-  <Wrapper radiumConfig={radiumConfig}>
-    <Index {...props} />
+export default ({radiumConfig, router}) => (
+  <Wrapper radiumConfig={radiumConfig}
+    router={router}
+    modules={{
+      reactRouterDom: require('react-router-dom')
+    }}
+  >
+    <Index />
   </Wrapper>
 );
 /* eslint-enable react/display-name, react/prop-types */

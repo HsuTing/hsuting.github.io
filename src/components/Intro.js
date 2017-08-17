@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import radium, {StyleRoot} from 'radium';
 import moment from 'moment';
 import Img from 'cat-components/lib/img';
+import Button from 'cat-components/lib/button';
+import Link from 'cat-components/lib/link';
 import VideoSubtitle from 'cat-components/lib/video-subtitle';
 import timer from 'cat-components/lib/timer';
 
@@ -18,9 +20,35 @@ const subtitle = introText.map(({content, type, ...time}) => ({
   content: now => ( // eslint-disable-line react/display-name
     !now ?
       <div /> :
-      <StyleRoot style={style.text}>
-        <span dangerouslySetInnerHTML={{__html: content.join('<br/>')}} />
-      </StyleRoot>
+      (() => {
+        switch(type) {
+          case 'websites':
+            return (
+              <div style={style.imgs}>
+                {content.map(({link, img}, index) => (
+                  <StyleRoot key={index}
+                    style={[style.img, style.animation]}
+                  >
+                    <Link to={link}>
+                      <Img style={[style.img, style.noMargin]}
+                        src={img}
+                        target='_blank'
+                        type='div'
+                      />
+                    </Link>
+                  </StyleRoot>
+                ))}
+              </div>
+            );
+
+          default:
+            return (
+              <StyleRoot style={style.animation}>
+                <span dangerouslySetInnerHTML={{__html: content.join('<br/>')}} />
+              </StyleRoot>
+            );
+        }
+      })()
   )
 }));
 const endTime = introText.slice(-1)[0];
@@ -37,15 +65,20 @@ export default class Intro extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      skip: false
+    };
+
     this.start = true;
+    this.skip = this.skip.bind(this);
   }
 
   componentDidUpdate() {
     const {timer, timerStop} = this.props;
+    const {skip} = this.state;
+    const isEnd = moment(timer).format('x') >= moment(endTime).format('x');
 
-    this.isEnd = moment(timer).format('x') >= moment(endTime).format('x');
-
-    if(this.isEnd)
+    if(isEnd || skip)
       timerStop();
   }
 
@@ -54,7 +87,18 @@ export default class Intro extends React.Component {
 
     return (
       <div>
-        <StyleRoot style={style.root}>
+        <Img style={style.background}
+          src={getLink('/public/img/intro/background.jpg')}
+          type='div'
+          onLoad={() => {
+            this.start = false;
+            timerStart();
+          }}
+        />
+
+        <div style={style.mask} />
+
+        <StyleRoot style={style.root(isRunning)}>
           <div />
 
           {
@@ -68,16 +112,18 @@ export default class Intro extends React.Component {
           <div />
         </StyleRoot>
 
-        <div style={style.mask} />
-        <Img style={style.background}
-          src={getLink('/public/img/intro/background.jpg')}
-          type='div'
-          onLoad={() => {
-            this.start = false;
-            timerStart();
-          }}
-        />
+        {
+          !isRunning ?
+            null :
+            <Button style={style.skip}
+              onClick={this.skip}
+            >skip</Button>
+        }
       </div>
     );
+  }
+
+  skip() {
+    this.setState({skip: true});
   }
 }

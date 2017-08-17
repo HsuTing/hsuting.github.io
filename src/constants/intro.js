@@ -7,4 +7,11 @@ export default [{
   second: 2,
   millisecond: 500,
   content: ['I build many styles.', 'Choose one you like.']
+}, {
+  second: 5,
+  type: 'websites',
+  content: [].constructor.apply(this, new Array(3)).map(() => ({
+    link: '/',
+    img: 'http://hsuting.com/public/favicon/apple-icon-180x180.png'
+  }))
 }];

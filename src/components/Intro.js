@@ -18,29 +18,9 @@ const subtitle = introText.map(({content, type, ...time}) => ({
   content: now => ( // eslint-disable-line react/display-name
     !now ?
       <div /> :
-      (() => {
-        switch(type) {
-          case 'types':
-            return (
-              <div style={style.imgs}>
-                {content.map(({link, img}, index) => (
-                  <Img key={index}
-                    style={style.img}
-                    src={img}
-                    link={link}
-                    type='div'
-                  />
-                ))}
-              </div>
-            );
-
-          default:
-            return (
-              <StyleRoot style={style.text}
-              >{content}</StyleRoot>
-            );
-        }
-      })()
+      <StyleRoot style={style.text}>
+        <span dangerouslySetInnerHTML={{__html: content.join('<br/>')}} />
+      </StyleRoot>
   )
 }));
 const endTime = introText.slice(-1)[0];
@@ -72,10 +52,9 @@ export default class Intro extends React.Component {
   render() {
     const {isRunning, timer, timerStart} = this.props;
 
-    // TODO: contentStyle
     return (
       <div>
-        <StyleRoot style={style.root(isRunning)}>
+        <StyleRoot style={style.root}>
           <div />
 
           {

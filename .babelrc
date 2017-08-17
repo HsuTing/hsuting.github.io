@@ -13,6 +13,7 @@
         "public": "public",
         "components": "components",
         "componentsShare": "components/share",
+        "componentsShareStyle": "components/share/style",
         "utils": "utils",
         "constants": "constants"
       }

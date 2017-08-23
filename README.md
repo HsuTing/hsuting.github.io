@@ -1,4 +1,4 @@
-# Hsuting.github.io [![Build Status][travis-image]][travis-url]
+# Hsuting.github.io
 HsuTing personal website
 
 ## Getting Started
@@ -16,6 +16,3 @@ yarn install && yarn build
 
 ## License
 MIT © [HsuTing](http://hsuting.com)
-
-[travis-image]: https://travis-ci.org/HsuTing/hsuting.github.io.svg?branch=master
-[travis-url]: https://travis-ci.org/HsuTing/hsuting.github.io

@@ -1,13 +1,13 @@
 {
   "scripts": {
     "webpack-server": "webpack-dev-server --content-base src --hot --inline",
-    "webpack": "NODE_ENV=production webpack",
+    "webpack": "cross-env NODE_ENV=production webpack",
     "lint": "eslint --cache ./src ./bin --ext .js",
     "lint:watch": "esw --cache ./src ./bin --ext .js -w --color",
     "babel": "rm -rf ./lib && babel src --out-dir lib",
     "babel:watch": "rm -rf ./lib && babel -w src --out-dir lib",
     "build": "yarn babel && static static.config.js",
-    "prod": "export NODE_ENV=production && yarn babel && static static.config.js && yarn webpack",
+    "prod": "yarn babel && cross-env NODE_ENV=production static static.config.js && yarn webpack",
     "watch": "concurrently -c green \"yarn lint:watch\" \"yarn babel:watch\" \"yarn webpack-server\""
   },
   "name": "hsuting.github.io",
@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "cat-components": "^1.7.2",
+    "cross-env": "^5.0.5",
     "moment": "^2.18.1",
     "nunjucks": "^3.0.1",
     "prop-types": "^15.5.10",

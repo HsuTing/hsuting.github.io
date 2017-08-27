@@ -2,8 +2,8 @@
   "scripts": {
     "webpack-server": "webpack-dev-server --content-base src --hot --inline",
     "webpack": "cross-env NODE_ENV=production webpack",
-    "lint": "eslint --cache ./src ./bin --ext .js",
-    "lint:watch": "esw --cache ./src ./bin --ext .js -w --color",
+    "lint": "eslint --cache ./src --ext .js",
+    "lint:watch": "esw --cache ./src --ext .js -w --color",
     "babel": "rm -rf ./lib && babel src --out-dir lib",
     "babel:watch": "rm -rf ./lib && babel -w src --out-dir lib",
     "build": "yarn babel && static static.config.js",

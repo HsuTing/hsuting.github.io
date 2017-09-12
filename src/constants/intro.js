@@ -10,7 +10,7 @@ export default [{
 }, {
   second: 5,
   type: 'websites',
-  content: [].constructor.apply(this, new Array(3)).map(() => ({
+  content: [].constructor.apply({}, new Array(3)).map(() => ({
     link: '/',
     img: 'http://hsuting.com/public/favicon/apple-icon-180x180.png'
   }))

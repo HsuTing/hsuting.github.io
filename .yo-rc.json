@@ -4,6 +4,7 @@
       "authorName": "HsuTing",
       "authorEmail": "hsuting0106@gmail.com",
       "authorUrl": "http://hsuting.com",
+      "private": false,
       "website": true,
       "chooseType": "docs",
       "graphql": false,
@@ -23,7 +24,7 @@
     },
     "template": {
       "subject": "HsuTing",
-      "url": "http://hsuting.com",
+      "url": "https://hsuting.github.io/",
       "otherSettings": []
     },
     "cat": true

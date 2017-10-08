@@ -3,51 +3,38 @@
 import React from 'react';
 import radium from 'radium';
 import Wrapper from 'cat-components/lib/wrapper';
+import I18n from 'cat-components/lib/i18n';
 
 import Normalize from 'componentsShare/Normalize';
-import Intro from 'components/Intro';
+
+import Logo from './Logo';
+import About from './About';
+import Footer from './Footer';
+import * as style from './style/index';
 
 @radium
 class Index extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showIntro: true
-    };
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    return (
-      nextState.showIntro !== this.state.showIntro
-    );
-  }
-
   render() {
-    const {showIntro} = this.state;
-
     return (
-      <div>
-        <Normalize />
-
-        {
-          !showIntro ?
-            null :
-            <Intro />
-        }
+      <div style={style.root}>
+        <Logo />
+        <About />
+        <Footer />
       </div>
     );
   }
 }
 
 /* eslint-disable react/display-name, react/prop-types */
-export default ({radiumConfig, router}) => (
-  <Wrapper radiumConfig={radiumConfig}
-    router={router}
-    modules={{
-      reactRouterDom: require('react-router-dom')
-    }}
-  >
-    <Index />
+export default ({radiumConfig, i18n, ...props}) => (
+  <Wrapper radiumConfig={radiumConfig}>
+    <div>
+      <Normalize />
+
+      <I18n {...i18n}>
+        <Index {...props} />
+      </I18n>
+    </div>
   </Wrapper>
 );
 /* eslint-enable react/display-name, react/prop-types */

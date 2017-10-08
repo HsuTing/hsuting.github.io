@@ -20,7 +20,8 @@ module.exports = {
   },
   output: {
     filename: ENV ? '[name].min.js' : '[name].js',
-    publicPath: '/assets/',
+    chunkFilename: ENV ? '[name].min.js' : '[name].js',
+    publicPath: ENV ? '/hsuting.github.io/public/js/' : '/assets/',
     path: path.resolve(__dirname, './public/js')
   },
   module: {

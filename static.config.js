@@ -1,20 +1,21 @@
 'use strict';
 
-const process = require('process');
-const useUrls = require('cat-components/lib/utils/useUrls').default;
-
-const {basename} = require('./lib/constants/constants');
-
-const router = {};
-
-if(process.env.NODE_ENV !== 'production')
-  router.basename = basename;
-
-module.exports = useUrls(['/'], {
+module.exports = [{
+  name: 'index',
+  lang: 'en-us',
+  langData: JSON.stringify(require('./public/i18n/en-us.json'))
+}, {
+  name: 'zh-tw',
+  lang: 'zh-tw',
+  langData: JSON.stringify(require('./public/i18n/zh-tw.json'))
+}].map(data => ({
+  ...data,
   component: './lib/components/Index',
   js: 'index',
-  name: 'index',
   props: {
-    router
+    i18n: {
+      lang: data.lang,
+      defaultData: JSON.parse(data.langData)
+    }
   }
-});
+}));

@@ -2,10 +2,8 @@ language: node_js
 node_js:
   - "node"
 script:
-  - yarn run lint
-  - yarn run build
-  - yarn run prod
-branches:
-only:
-  - master
+  - yarn lint
+  - yarn build
+  - yarn prod
+  - yarn test
 yarn: true

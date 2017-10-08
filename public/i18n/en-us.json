@@ -1,0 +1,6 @@
+{
+  "about": [
+    "Hi, I am Hsu Ting. I am a website engineer. I have a lot of the experience for making websites. I use \"React\" to build the front end of websites, use \"koa\" to build the back end of websites. I am also familiar with \"AWS\", \"heroku\" and so on. As a result, Deploying websites to servers is not difficult to me. Besides website design, I use \"jest\" to check the coverage of code and test all events are right. \"eslint\" is used for checking my code style does not have any no need code symbol. However, \"CI\" is not familiar with me. I use \"travis\" to run my public projects and \"circleci\" to run my private projects.",
+    "To be a engineer, continuous learning is the most important thing. As a result, I am always focus on the newest technological advancements. \"react\", \"relay\" and \"graphl\" are area where I have focused much attention. Coding become one of my life, but my life is not just coding. Pencil drawing, cooking, bartending and so on are also my interest."
+  ]
+}

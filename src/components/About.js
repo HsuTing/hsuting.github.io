@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import radium, {StyleRoot} from 'radium';
 import {language} from 'cat-components/lib/i18n';
 
+import {content as contentStyle} from 'componentsShare/style/style';
+
 import * as style from './style/about';
 
 @language
@@ -28,7 +30,7 @@ export default class About extends React.Component {
       <StyleRoot style={style.root}>
         {about.map((text, textIndex) => (
           <div key={textIndex}
-            style={style.text(textIndex === 0)}
+            style={[contentStyle(textIndex === 0), style.text]}
           >{text}</div>
         ))}
       </StyleRoot>

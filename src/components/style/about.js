@@ -13,12 +13,10 @@ export const root = {
   }),
   ...layoutStyle.phone({
     padding: `calc(${iconSize}px / 2 + 50px) 20px 50px`
-  }),
-  lineHeight: '30px'
+  })
 };
 
-export const text = isFirst => ({
-  margin: isFirst ? '0px auto' : '20px auto 0px',
+export const text = {
   width: '100%',
   maxWidth: '600px'
-});
+};

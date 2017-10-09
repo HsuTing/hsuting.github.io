@@ -7,10 +7,13 @@ import Index from 'components/Index';
 
 it('Index', () => {
   const wrapper = mount(
-    <Index />
+    <Index
+      i18n={{
+        lang: 'en-us',
+        defaultData: require('./../../../public/i18n/en-us.json')
+      }}
+    />
   );
 
-  expect(wrapper.containsAnyMatchingElements([
-    <div>This is Index!</div> // eslint-disable-line react/jsx-key
-  ])).toBe(true);
+  expect(wrapper.html()).toBeDefined();
 });

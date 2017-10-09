@@ -13,7 +13,8 @@
         "public": "public",
         "components": "components",
         "componentsShare": "components/share",
-        "utils": "utils"
+        "utils": "utils",
+        "constants": "constants"
       }
     }]
   ]

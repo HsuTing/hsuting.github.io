@@ -9,6 +9,7 @@ import Normalize from 'componentsShare/Normalize';
 
 import Logo from './Logo';
 import About from './About';
+import FrontEnd from './FrontEnd';
 import Footer from './Footer';
 import * as style from './style/index';
 
@@ -19,6 +20,7 @@ class Index extends React.Component {
       <div style={style.root}>
         <Logo />
         <About />
+        <FrontEnd />
         <Footer />
       </div>
     );

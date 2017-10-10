@@ -18,5 +18,23 @@
      "比起後端，我花費更多時間在前端，但是我仍盡我所能的讓我能夠更完美的部署主機，為此我仍然不斷學習與改進。"
    ]
   },
-  "github": "我的最新 project"
+  "github": "我的最新 project",
+  "works": [{
+    "title": "生日計時器",
+    "img": "una-timer.png",
+    "link": "https://hsuting.github.io/Una-timer/"
+  }, {
+    "title": "德華行銷",
+    "img": "dehua.png",
+    "link": "http://www.22227070.com.tw/"
+  }, {
+    "title": "堂奧創意廣告",
+    "img": "exedesign.png",
+    "link": "http://antervic.com/"
+  }, {
+    "title": "尋尋覓蜜蜂蜜專賣",
+    "img": "xunmihoney.png",
+    "link": "http://xunmihoney.com/"
+  }],
+  "workButton": "更多作品"
 }

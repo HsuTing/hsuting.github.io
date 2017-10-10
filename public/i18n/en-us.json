@@ -18,5 +18,23 @@
       "I speed more time to the front end then the front end of websites. However, I still try to do my best to make my servers to be more prefect. As a result, I still learn more newset technological advancements and improve my skills."
     ]
   },
-  "github": "NEWEST PROJECT"
+  "github": "NEWEST PROJECT",
+  "works": [{
+    "title": "Una timer",
+    "img": "una-timer.png",
+    "link": "https://hsuting.github.io/Una-timer/"
+  }, {
+    "title": "dehua",
+    "img": "dehua.png",
+    "link": "http://www.22227070.com.tw/"
+  }, {
+    "title": "exedesign",
+    "img": "exedesign.png",
+    "link": "http://antervic.com/"
+  }, {
+    "title": "xunmihoney",
+    "img": "xunmihoney.png",
+    "link": "http://xunmihoney.com/"
+  }],
+  "workButton": "MORE WORKS"
 }

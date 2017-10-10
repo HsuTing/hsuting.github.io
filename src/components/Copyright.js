@@ -3,8 +3,7 @@
 import React from 'react';
 
 export default () => ( // eslint-disable-line react/display-name
-  <div>
-    {`
+  <div dangerouslySetInnerHTML={{__html: (`
     The MIT License (MIT)
 
     Copyright (c) 2017 HsuTing <hsuting0106@gmail.com> (http://hsuting.com)
@@ -26,6 +25,5 @@ export default () => ( // eslint-disable-line react/display-name
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
-    `}
-  </div>
+  `).replace(/\n/g, '<br />')}} />
 );

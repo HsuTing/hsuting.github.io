@@ -1,11 +1,9 @@
 'use strict';
 
-import * as grey from 'cat-components/lib/color/grey';
 import * as layoutStyle from 'cat-components/lib/layout';
 
 export const root = {
   padding: '50px 100px',
-  background: grey._100_,
   ...layoutStyle.tablet({
     padding: '50px 60px'
   }),

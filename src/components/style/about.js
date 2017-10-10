@@ -7,7 +7,7 @@ import {iconSize} from './logo';
 
 export const root = {
   padding: `calc(${iconSize}px / 2 + 50px) 100px 50px`,
-  background: grey._100_,
+  background: grey._200_,
   ...layoutStyle.tablet({
     padding: `calc(${iconSize}px / 2 + 50px) 60px 50px`
   }),

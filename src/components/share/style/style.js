@@ -10,6 +10,7 @@ export const title = {
 
 export const content = isFirst => ({
   margin: isFirst ? '0px auto' : '20px auto 0px',
-  lineHeight: '30px',
+  fontSize: '15px',
+  lineHeight: '25px',
   color: grey._600_
 });

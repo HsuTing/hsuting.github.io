@@ -9,5 +9,13 @@
       "In the front end, I use \"react\" to build the base of websites. \"react-redux\" is used to handle the data in the front end. Use \"react-router-dom\" to build declarative routing. The module I use to connect to servers is \"relay\". I use \"relay\" to get data and mutation data to servers. Besides those popular modules, I also write a module, \"cat-components\", to help me build websites quickly. \"cat-components\" is a module which use \"radium\" to handle style.",
       "For me, I does not think the way I use to build websites is the best way to building websites. However, this way is perfect for me. I can use those modules to build any website I want quickly. I also do my best to learn other newest modules to help me improve the way I use to build websites."
     ]
+  },
+  "backEnd": {
+    "title": "BACK-END",
+    "content": [
+      "In the back end, I use \"koa\" to build my servers. I does not write \"RESTful API\", right now. I write \"graphql\" to replace \"RESTful API\". \"graphql\" is not very popular, now. However, I think it will be a best way to handle data. \"graphql\" is vary difficult to learn but it is very easy to maintain. That is why I choose \"graphql\" instead of \"RESTful API\".",
+      "To deploy my project, I use \"docker\" to help me deploy my project to servers. Writing a \"Dockerfile\" is easy to me and I write \"bash script\" to deploy more easily. When I need to delpy to servers, I will choose to use \"heroku\" or \"AWS\". \"heroku\" is very easy, but it does not have database for free. As a result, I use \"firebase\" to be my database when I use \"heroku\".",
+      "I speed more time to the front end then the front end of websites. However, I still try to do my best to make my servers to be more prefect. As a result, I still learn more newset technological advancements and improve my skills."
+    ]
   }
 }

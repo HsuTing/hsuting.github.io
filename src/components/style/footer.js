@@ -11,6 +11,12 @@ export const root = {
   textAlign: 'center'
 };
 
+export const icon = {
+  margin: '0px 5px 20px',
+  width: '35px',
+  height: '35px'
+};
+
 export const language = {
   display: 'inline-block',
   fontSize: '14px',

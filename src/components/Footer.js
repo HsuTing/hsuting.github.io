@@ -3,6 +3,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import radium from 'radium';
+import GithubIcon from 'react-icons/lib/fa/github-square';
+import LinkedinIcon from 'react-icons/lib/fa/linkedin-square';
+import FacebookIcon from 'react-icons/lib/fa/facebook-square';
+import EmailIcon from 'react-icons/lib/fa/envelope-square';
+import PhoneIcon from 'react-icons/lib/fa/phone-square';
 import {language} from 'cat-components/lib/i18n';
 
 import getLink from 'utils/getLink';
@@ -25,6 +30,31 @@ export default class Footer extends React.Component {
 
     return (
       <footer style={style.root}>
+        <div>
+          {[{
+            link: 'https://github.com/HsuTing',
+            Icon: GithubIcon
+          }, {
+            link: 'https://www.linkedin.com/in/ting-hsu-b3a640b1/',
+            Icon: LinkedinIcon
+          }, {
+            link: 'https://www.facebook.com/hsuting0106',
+            Icon: FacebookIcon
+          }, {
+            link: 'mailto:hsuting0106@gmail.com',
+            Icon: EmailIcon
+          }, {
+            link: 'tel:+886937931289',
+            Icon: PhoneIcon
+          }].map(({link, Icon}, iconIndex) => (
+            <a key={iconIndex}
+              href={link}
+            >
+              <Icon style={style.icon} />
+            </a>
+          ))}
+        </div>
+
         <div style={style.language}>
           {[{
             url: '/',
@@ -39,7 +69,10 @@ export default class Footer extends React.Component {
             <div key={textIndex}
               style={style.button}
               onClick={() => {
-                window.history.pushState({}, 0, getLink(url));
+                /* istanbul ignore if */
+                if(process.env.NODE_ENV !== 'test')
+                  window.history.pushState({}, 0, getLink(url));
+
                 changeLanguage();
               }}
             >{name}</div>

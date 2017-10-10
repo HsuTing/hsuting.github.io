@@ -1,5 +1,5 @@
-# Hsuting-github-io [![Build Status][travis-image]][travis-url] 
-Hsuting personal website
+# Hsuting.github.io [![Build Status][travis-image]][travis-url] 
+This is my personal website.
 
 ## Getting Started
 Install packages using [yarn](https://yarnpkg.com/) (we assume you have pre-installed [npm](https://www.npmjs.com/) and [node.js](https://nodejs.org/)).
@@ -18,5 +18,5 @@ yarn install && yarn build
 ## License
 MIT © [HsuTing](http://hsuting.com)
 
-[travis-image]: https://travis-ci.org/HsuTing/hsuting-github-io.svg?branch=master
-[travis-url]: https://travis-ci.org/HsuTing/hsuting-github-io
+[travis-image]: https://travis-ci.org/HsuTing/hsuting.github.io.svg?branch=master
+[travis-url]: https://travis-ci.org/HsuTing/hsuting.github.io

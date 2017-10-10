@@ -75,7 +75,7 @@ export default class Works extends React.Component {
     const max = Math.floor(works.length / 3);
 
     this.setState({
-      index: index + 1 > max ? max : index + 1
+      index: index + 1 > max ? /* istanbul ignore next */ max : index + 1
     });
   }
 }

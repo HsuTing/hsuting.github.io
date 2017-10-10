@@ -5,6 +5,10 @@ module.exports = [{
   lang: 'en-us',
   langData: JSON.stringify(require('./public/i18n/en-us.json'))
 }, {
+  name: 'author',
+  lang: 'en-us',
+  langData: JSON.stringify(require('./public/i18n/en-us.json'))
+}, {
   name: 'zh-tw',
   lang: 'zh-tw',
   langData: JSON.stringify(require('./public/i18n/zh-tw.json'))

@@ -10,7 +10,12 @@
       "graphql": false,
       "plugins": [],
       "subject": "HsuTing",
-      "otherSettings": []
+      "otherSettings": [
+        "facebook",
+        "google_analytics"
+      ],
+      "facebook-app_id": "1687681968184120",
+      "google_analytics-google_id": "UA-54088195-4"
     },
     "plugins": [
       "docs",
@@ -25,7 +30,16 @@
     "template": {
       "subject": "HsuTing",
       "url": "https://hsuting.github.io/",
-      "otherSettings": []
+      "otherSettings": [
+        "facebook",
+        "google_analytics"
+      ],
+      "facebook": {
+        "app_id": "1687681968184120"
+      },
+      "google_analytics": {
+        "google_id": "UA-54088195-4"
+      }
     },
     "cat": true
   }

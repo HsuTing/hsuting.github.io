@@ -22,4 +22,7 @@ module.exports = [{
       defaultData: JSON.parse(data.langData)
     }
   }
-}));
+})).concat([{
+  name: 'copyright',
+  component: './lib/components/Copyright'
+}]);

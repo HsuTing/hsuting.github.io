@@ -6,10 +6,44 @@ import radium, {StyleRoot} from 'radium';
 import {language} from 'cat-components/lib/i18n';
 import Img from 'cat-components/lib/img';
 import Button from 'cat-components/lib/button';
+import Loading from 'cat-components/lib/loading';
 
 import getLink from 'utils/getLink';
 
 import * as style from './style/works';
+
+class Show extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: true
+    };
+
+    this.load = this.load.bind(this);
+  }
+
+  render() {
+    const {isLoading} = this.state;
+
+    return [
+      <Img {...this.props}
+        key='img'
+        style={style.img(isLoading)}
+        onLoad={this.load}
+      />, (
+        !isLoading ?
+          null :
+          <Loading key='loading'
+            style={style.loading}
+          />
+      )
+    ];
+  }
+
+  load() {
+    this.setState({isLoading: false});
+  }
+}
 
 @language
 @radium
@@ -47,8 +81,7 @@ export default class Works extends React.Component {
               <div style={style.title}
               >{title}</div>
 
-              <Img style={style.img}
-                src={getLink(`/public/img/works/${img}`)}
+              <Show src={getLink(`/public/img/works/${img}`)}
                 link={link}
                 target='_blank'
                 type='div'

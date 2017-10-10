@@ -23,6 +23,7 @@ export const container = {
   margin: 'auto',
   width: '100%',
   maxWidth: '800px',
+  textAlign: 'center',
   ...layoutStyle.phone({
     gridTemplateColumns: '100%'
   })
@@ -30,14 +31,17 @@ export const container = {
 
 export const title = {
   margin: '0px 0px 20px',
-  fontSize: '16px',
-  textAlign: 'center'
+  fontSize: '16px'
 };
 
-export const img = {
+export const img = isLoading => ({
   width: '100%',
-  height: '300px',
+  height: isLoading ? '0px' : '300px',
   filter: 'grayscale(100%)'
+});
+
+export const loading = {
+  display: 'inline-block'
 };
 
 export const button = {

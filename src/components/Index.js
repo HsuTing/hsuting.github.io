@@ -11,6 +11,7 @@ import Logo from './Logo';
 import About from './About';
 import FrontEnd from './FrontEnd';
 import BackEnd from './BackEnd';
+import Github from './Github';
 import Footer from './Footer';
 import * as style from './style/index';
 
@@ -23,6 +24,7 @@ class Index extends React.Component {
         <About />
         <FrontEnd />
         <BackEnd />
+        <Github />
         <Footer />
       </div>
     );

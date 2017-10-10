@@ -12,13 +12,20 @@ export const root = {
 };
 
 export const language = {
-  display: 'inline-block'
+  display: 'inline-block',
+  fontSize: '14px',
+  fontWeight: 'medium'
 };
 
 export const line = {
   display: 'inline-block',
-  margin: '0px 10px',
   height: '15px',
   border: `0.5px solid ${white}`,
   verticalAlign: 'middle'
+};
+
+export const button = {
+  display: 'inline-block',
+  padding: '0px 10px',
+  cursor: 'pointer'
 };

@@ -66,7 +66,7 @@ export default class Gtihub extends React.Component {
                 <a style={style.projectName}
                   href={link}
                   target='_blank'
-                >{name}. </a>
+                >{name}</a>
             }
           </div>
         </StyleRoot>

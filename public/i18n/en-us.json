@@ -13,7 +13,7 @@
   "backEnd": {
     "title": "BACK-END",
     "content": [
-      "In the back end, I use \"koa\" to build my servers. I does not write \"RESTful API\", right now. I write \"graphql\" to replace \"RESTful API\". \"graphql\" is not very popular, now. However, I think it will be a best way to handle data. \"graphql\" is very difficult to learn but it is very easy to maintain. That is why I choose \"graphql\" instead of \"RESTful API\".",
+      "In the back end, I use \"koa\" to build my servers. I does not write \"RESTful API\", right now. I write \"graphql\" to replace \"RESTful API\". \"graphql\" is not very popular, now. However, I think it will be a best way to handle data. It is very difficult to learn \"graphql\" but easy to maintain it. That is why I choose \"graphql\" instead of \"RESTful API\".",
       "To deploy my project, I use \"docker\" to help me deploy my project to servers. Writing a \"Dockerfile\" is easy to me and I write \"bash script\" to deploy more easily. When I need to delpy to servers, I will choose to use \"heroku\" or \"AWS\". \"heroku\" is very easy, but it does not have database for free. As a result, I use \"firebase\" to be my database when I use \"heroku\".",
       "I spend more time on learning the front end then the front end of websites. However, I still do my best to make my servers more prefect. As a result, I still learn more newset technological advancements and improve my skills."
     ]
